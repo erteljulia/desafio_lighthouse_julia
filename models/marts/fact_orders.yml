@@ -1,0 +1,83 @@
+version: 2
+
+models:
+  - name: fact_orders
+    columns:
+      - name: salesorderdetailid
+        description: Coluna com o ID para identificar cada produto vendido no pedido.
+        tests:
+          - not_null
+      
+      - name: salesorderid
+        description: Coluna com o ID do pedido.
+        tests:
+          - not_null
+
+      - name: productid
+        description: Coluna com o ID do cadastro do produto.
+        tests:
+          - not_null
+         
+      - name: orderqty
+        description: Coluna com a quantidade pedida por produto.
+               
+      - name: unitprice
+        description: Coluna de venda com o preço unitário de venda.
+
+      - name: unitpricediscount
+        description: Coluna com o desconto unitário.
+       
+      - name: order_status
+        description: Coluna com o status do pedido. 1 = em processo, 2 = aprovado, 3 = indisponível no estoque, 4 = rejeitado, 5 = embarcado e 6 = cancelado.
+
+      - name: customerid
+        description: Coluna com o ID do cliente.
+
+      - name: salespersonid
+        description: Coluna com o ID do vendedor que criou a ordem de compra.
+
+      - name: territoryid
+        description: Coluna com o ID do território onde o Estado está localizado.
+        
+      - name: billtoaddressid
+        description: Coluna com o ID do endereço de faturamento do cliente.
+      
+      - name: shiptoaddressid
+        description: Coluna com o ID do endereço onde a mercadoria deve ser entregue.
+
+      - name: creditcardid
+        description: Coluna com o ID do tipo de cartão de crédito.
+
+      - name: subtotal
+        description: É a soma de todos os valores do pedido por ID do salesorderid.
+      
+      - name: taxamt
+        description: Coluna com o valor dos impostos.
+
+      - name: freight
+        description: Coluna com o custo do frete.
+
+      - name: totaldue
+        description: Coluna com o valor total, considerando subtotal, impostos e frete.
+
+      - name: order_date
+        description: Coluna com a data em que o pedido foi criado.
+        
+      - name: due_date
+        description: Coluna com a data de vencimento do pagamento.
+        
+      - name: countryregioncode
+        description: Coluna com o código padrão do País.
+        
+      - name: territory_name
+        description: Coluna com o nome do território.
+
+      - name: name_group
+        description: Coluna com o nome do grupo de terittórios agrupados.
+
+      - name: salesytd
+        description: Coluna com o valor de vendas do ano até a data atual.
+
+      - name: saleslastyear
+        description: Coluna com o valor de vendas do ano passado.
+        

@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_sk
+        description: Chave SK criada com as colunas customerid, stg_sales_store.businessentityid, territoryid.
+        tests:
+          - unique
+          - not_null
+                   
+      - name: name_store
+        description: Coluna com o nome da loja.
+
+      - name: customerid
+        description: Coluna com o ID do cliente.
+
+      - name: personid
+        description: Coluna com o ID dos clientes e funcionários.
+                  
+      - name: territoryid
+        description: Coluna com ID do território.
+                  
+      - name: businessentityid
+        description: Coluna com a ID do cadastro de pessoas.
+                                            
+      - name: full_name
+        description: Coluna com o nome completo das pessoas.
+
+      - name: persontype
+        description: Coluna com o tipo de pessoa. O código SC significa "contato na loja", In significa "cliente individual", GC significa "contato geral". Estes são os tipos que nos interessam nesta dimensão.
+
+      - name: emailpromotion
+        description: Coluna que identifica os clientes que não querem receber e-mail (0), clientes que querem receber (1) e clientes que querem receber e-mail tanto da AWC quanto de seus parceiros (2).
