@@ -39,12 +39,6 @@ models:
       - name: territoryid
         description: Coluna com o ID do território onde o Estado está localizado.
         
-      - name: billtoaddressid
-        description: Coluna com o ID do endereço de faturamento do cliente.
-      
-      - name: shiptoaddressid
-        description: Coluna com o ID do endereço onde a mercadoria deve ser entregue.
-
       - name: creditcardid
         description: Coluna com o ID do tipo de cartão de crédito.
 
@@ -65,19 +59,4 @@ models:
         
       - name: due_date
         description: Coluna com a data de vencimento do pagamento.
-        
-      - name: countryregioncode
-        description: Coluna com o código padrão do País.
-        
-      - name: territory_name
-        description: Coluna com o nome do território.
-
-      - name: name_group
-        description: Coluna com o nome do grupo de terittórios agrupados.
-
-      - name: salesytd
-        description: Coluna com o valor de vendas do ano até a data atual.
-
-      - name: saleslastyear
-        description: Coluna com o valor de vendas do ano passado.
         

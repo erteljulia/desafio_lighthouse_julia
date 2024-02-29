@@ -1,6 +1,6 @@
 with
     validation as (
-        select count(salesorderid) as count_val
+        select count(distinct salesorderid) as count_val
         from {{ref('fact_ordersaggregate')}}
     )
 select * from validation

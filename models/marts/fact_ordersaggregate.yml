@@ -5,6 +5,9 @@ models:
     columns:
       - name: territoryid
         description: Coluna com o ID do território do qual o vendedor faz parte.
+
+      - name: territory_name
+        description: Coluna com o nome do território.
            
       - name: businessentityid
         description: Coluna com o ID do vendedor.
@@ -15,24 +18,12 @@ models:
       - name: country_name
         description: Coluna com o nome do país.
                
-      - name: full_name
-        description: Coluna com o nome do vendedor.
-
-      - name: ano
-        description: Coluna com o agrupamento de pedidos por ano.
-       
-      - name: mes
-        description: Coluna com o agrupamento de pedidos por mês.
-
-      - name: quantidade_pedidos
-        description: Coluna com a quantidade de pedidos.
-
       - name: salespersonid
         description: Coluna com o ID do vendedor que criou a ordem de compra.
 
-      - name: valor_total
+      - name: totaldue
         description: Coluna com a soma do valor dos pedidos.
         
       - name: order_status
-        description: Coluna que está na cláusula where. Neste caso está excluindo os pedidos cancelados e rejeitados.
-      
+        description: Coluna que está na cláusula where. É preciso excluir os pedidos cancelados e rejeitados.
+        

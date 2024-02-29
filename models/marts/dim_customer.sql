@@ -16,7 +16,7 @@ with
     )
     , combined_staging as (
         select
-            {{ dbt_utils.generate_surrogate_key(['customerid', 'stg_sales_store.businessentityid', 'territoryid']) }} as customer_sk
+            {{ dbt_utils.generate_surrogate_key(['customerid', 'storeid', 'personid']) }} as customer_sk
             , stg_sales_customer.customerid
             , stg_sales_customer.storeid
             , stg_sales_store.businessentityid
