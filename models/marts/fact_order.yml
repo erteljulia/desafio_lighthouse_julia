@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: fact_orders
+  - name: fact_order
     columns:
       - name: salesorderdetailid
         description: Coluna com o ID para identificar cada produto vendido no pedido.

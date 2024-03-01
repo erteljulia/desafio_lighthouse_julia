@@ -17,7 +17,7 @@ with
     )
     , transformed as (
         select
-            {{ dbt_utils.generate_surrogate_key(['stg_person_stateprovince.stateprovinceid' , 'territory_name']) }} as address_sk 
+            {{ dbt_utils.generate_surrogate_key(['stg_person_stateprovince.stateprovinceid' , 'country_name','territory_name']) }} as address_sk 
             , stg_person_address.addressid     
             , stg_person_stateprovince.stateprovinceid    
             , stg_person_countryregion.countryregioncode
