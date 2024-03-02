@@ -62,3 +62,6 @@ sources:
 
       - name: "store"
         description: "Tabela com informações sobre lojas."
+
+      - name: "emailaddress"
+        description: "Tabela com e-mails."
