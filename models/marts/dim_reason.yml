@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_reason
+    columns:
+      - name: salesorderid
+        description: Coluna com o ID do pedido de venda. 
+        
+      - name: reason_name_aggregated
+        description: Coluna com o que influenciou a venda (motivos).
+
+      - name: reason_id_aggregate
+        description: Coluna com os IDs relacionados aos motivos.
+      

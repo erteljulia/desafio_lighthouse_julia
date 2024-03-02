@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_salesperson
+    columns:
+      - name: salesperson_sk
+        description: Chave SK criadas com 'stg_humanresources_employee.businessentityid, stg_sales_salesperson.territoryid, stg_person_person.persontype.
+        tests:
+          - not_null
+          - unique
+
+      - name: jobtitle
+        description: Coluna com o cargo do funcionário.
+               
+      - name: full_name
+        description: Coluna com o nome completo da pessoa.
+
+      - name: persontype
+        description: Coluna com o tipo de pessoa. O código SP significa "sales person", tipo de pessoa que nos interessa nesta dimensão.
+
+      - name: territoryid
+        description: Coluna com o ID do território onde o Estado está localizado.
+      
+      - name: salesquota
+        description: Coluna com a projeção de vendas anuais.
+
+      - name: bonus
+        description: Coluna com o valor do bônus caso a meta seja alcançada.
+
+      - name: commissionpct
+        description: Coluna com o percentual de comissão por venda.
+
+      - name: businessentityid
+        description: Coluna com o ID do cadastro do vendedor.
+        

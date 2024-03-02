@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_product
+    columns:
+      - name: product_sk 
+        description: Chave SK de productid e name_product.
+        tests:
+          - not_null
+          - unique
+
+      - name: productid 
+        description: Coluna com o ID do produto.
+
+      - name: name_product
+        description: Coluna com o nome do produto.
+
+      - name: standardcost
+        description: Coluna com o preço padrão do produto.
+
+      - name: listprice
+        description: Coluna com o preço de venda do produto.
+       
+      - name: productline
+        description: Coluna com o tipo de produto. Touring = turismo/aventura, Standart = tradicionais, Road = estrada, Mountain = montanha.
+
+      - name: style
+        description: Coluna com o estilo, diferenciado entre W = mulheres, M = homens e U = universal.
+        

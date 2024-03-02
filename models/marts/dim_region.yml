@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_region
+    columns:
+      - name: address_sk
+        description: Chave SK criada com stg_person_stateprovince.stateprovinceid , territory_name.
+       
+      - name: countryregioncode
+        description: Coluna com o código padrão do País.
+      
+      - name: addressid
+        description: Coluna com o ID do cadastro de endereço.
+
+      - name: stateprovinceid
+        description: Coluna com o ID da província/Estado.
+        
+      - name: territoryid
+        description: Coluna com o ID do território onde o Estado está localizado.
+
+      - name: territory_name
+        description: Coluna com o nome do teritório.
+
+      - name: city
+        description: Coluna com o nome da cidade.
+
+      - name: name_state
+        description: Coluna com o nome do Estado.
+
+      - name: country_name
+        description: Coluna com o nome do país.
+        
