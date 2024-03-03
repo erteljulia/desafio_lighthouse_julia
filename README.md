@@ -1,25 +1,18 @@
-# Indicium Academy
+# Desafio Final de Dados Lighthouse by Indicium
 
-Repositório para ser utilizado no desafio para a obtenção da certificação de Analytics Engineer by Indicium. Faça o fork deste repositório e o utilize durante o desafio para fazer a insgestão das tabelas do SAP do Adventure Works.
+## Case Adventure Works Cycle
 
-## Instruções
+Este repositório contém:
+* Dados brutos em .csv coletados via fork do repositório https://github.com/techindicium/academy-dbt 
+* Modelagem de dados em camada staging e camada marts, com tabelas dimensões e fato, documentação e testes. A modelagem foi feita no dbt Cloud para composição de um Data Warehouse no Google Big Query. [Documentação do Projeto no dbt Cloud] (https://cloud.getdbt.com/accounts/245062/develop/5779649/docs/index.html#!/overview)
+* Arquivo .pdf com o diagrama conceitual do Data Warehouse.
+* Arquivo .pbix do dashboard nível técnico. Visualização pública: [Dashboard Nível Técnico] (https://app.powerbi.com/view?r=eyJrIjoiY2E2YzQ0ZmMtNTVlMi00NWNiLWEzNmQtYTNiMThkZTI0Y2M4IiwidCI6Ijc3ZTUyN2NkLWFkNWYtNDVmMC1iZjg5LWRmYTkwZWRkMGEyNyJ9)
+* Arquivo .pbix do dashboard para c-level. Visualização pública: [Dashboard C-level] (https://app.powerbi.com/view?r=eyJrIjoiNjQ1ZjIyODktMjFjYS00ZmQ1LWIyZjctMDAyN2E2OTA4OTY3IiwidCI6Ijc3ZTUyN2NkLWFkNWYtNDVmMC1iZjg5LWRmYTkwZWRkMGEyNyJ9)
+* Notebook com previsão de demanda
+* Relatório/Apresentação completa do projeto
+* Vídeo com apresentação das etapas do projeto
 
-Todas as tabelas do banco fonte do SAP da Adventure Works serão carregadas como seeds pelo dbt. Os arquivos .csv com os dados já estão na pasta de seeds.
+## Autora
 
-Para fazer o carregamento de todas as tabelas usem o comando:
-- `dbt seed`
+Júlia de Moura Ertel - Data Analyst
 
-Para carregar uma tabela especifíca utilizem o comando
-- `dbt seed -s nome_do_csv`
-
-### Problemas comuns
-
-Em caso a linha de comando do dbt fique com o status de estar sempre carregando, ou, o job do comando `dbt seed` fique rodando indefinitivamente mesmo após as 64 tabelas forem carregadas você precisará reiniciar o terminal. Para isso, clique nos três pontos no canto inferior direito ou no lado direito da linha de comando e escolha a opção `Restart IDE`.
-
-
-## Recursos:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
