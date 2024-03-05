@@ -9,8 +9,7 @@ with
     )
     , reasonbyorderid as (
         select 
-            row_number() over (order by stg_sales_salesorderheadersalesreason.salesorderid) as reason_sk
-            , stg_sales_salesorderheadersalesreason.salesorderid
+            stg_sales_salesorderheadersalesreason.salesorderid
             , string_agg(stg_sales_salesreason.reason_name, ', ') as reason_name_aggregated
             , string_agg(cast(stg_sales_salesorderheadersalesreason.salesreasonid as string), ', ') as reason_id_aggregate
         from stg_sales_salesorderheadersalesreason

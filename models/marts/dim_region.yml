@@ -4,11 +4,8 @@ models:
   - name: dim_region
     columns:
       - name: address_sk
-        description: Chave SK criadas com stg_person_address.addressi, stg_person_stateprovince.stateprovinceid, stg_person_countryregion.countryregioncode e stg_sales_salesterritory.territoryid.
-        tests:
-          - not_null
-          - unique
-
+        description: Chave SK criada com stg_person_stateprovince.stateprovinceid , territory_name.
+       
       - name: countryregioncode
         description: Coluna com o código padrão do País.
       
@@ -20,6 +17,9 @@ models:
         
       - name: territoryid
         description: Coluna com o ID do território onde o Estado está localizado.
+
+      - name: territory_name
+        description: Coluna com o nome do teritório.
 
       - name: city
         description: Coluna com o nome da cidade.

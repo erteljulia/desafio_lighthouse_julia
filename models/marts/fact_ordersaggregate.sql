@@ -14,7 +14,11 @@ with
             stg_sales_salesorderheader.order_date
             , dim_salesperson.businessentityid
             , dim_region.territoryid
+            , dim_region.territory_name
+            , dim_region.name_state
+            , dim_region.country_name
             , stg_sales_salesorderheader.salesorderid
+            , stg_sales_salesorderheader.order_status
             , stg_sales_salesorderheader.salespersonid
             , stg_sales_salesorderheader.totaldue
         from {{ref('stg_sales_salesorderheader')}}
@@ -24,7 +28,11 @@ with
             stg_sales_salesorderheader.salesorderid
             , stg_sales_salesorderheader.order_date
             , dim_salesperson.businessentityid
+            , stg_sales_salesorderheader.order_status
             , dim_region.territoryid
+            , dim_region.territory_name
+            , dim_region.name_state
+            , dim_region.country_name
             , stg_sales_salesorderheader.salespersonid
             , stg_sales_salesorderheader.totaldue
     )

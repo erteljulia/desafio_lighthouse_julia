@@ -24,11 +24,7 @@ with
     )
     , combined_staging as (
         select
-            {{ dbt_utils.generate_surrogate_key([
-                'stg_humanresources_employee.businessentityid'
-                , 'stg_sales_salesperson.territoryid'
-                , 'stg_person_person.persontype' 
-            ]) }} as salesperson_sk
+            {{ dbt_utils.generate_surrogate_key(['territoryid', 'persontype', 'stg_sales_salesperson.businessentityid']) }} as salesperson_sk
             , stg_sales_salesperson.businessentityid
             , stg_humanresources_employee.jobtitle
             , stg_person_person.full_name
