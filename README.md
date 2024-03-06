@@ -10,7 +10,6 @@ Este repositório contém:
 * Arquivo .pbix do dashboard para c-level. Visualização pública: [Dashboard C-level](https://app.powerbi.com/view?r=eyJrIjoiNjcxOGJmMTItMjA0OC00NTFlLWE0NGYtOWFkOTEyNWNkNDdlIiwidCI6Ijc3ZTUyN2NkLWFkNWYtNDVmMC1iZjg5LWRmYTkwZWRkMGEyNyJ9)
 * Notebook com previsão de demanda
 * Relatório/Apresentação completa do projeto
-* Vídeo com apresentação das etapas do projeto
 
 ## Autora
 
